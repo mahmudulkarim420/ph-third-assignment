@@ -39,7 +39,7 @@ var fileName= "pdfData.jpg";
 //write your code here
 
 if (
-  (fileName.startsWith("#") || fileName.endsWith(".pdf") || fileName.endsWith(".docx"))) {
+  (fileName[0] === ("#") || fileName.slice(-4) === (".pdf") || fileName.slice(-5) === (".docx"))) {
     console.log("Store");
 } else {
   console.log("Delete");
@@ -47,8 +47,9 @@ if (
 
 
 
+
 /** Problem 05 - ( PH Email Generator )  */
-var student= { name: "mewo" , roll: 96 ,department: "cse"};
+var student= { name: "jhankar" , roll: 1014 ,department: "cse" };
 //write your code here
 
 var email = student.name + student.roll + '.' + student.department + '@ph.ac.bd';
@@ -58,8 +59,8 @@ console.log(email);
 
 
 /** Problem 06 :  (Current Salary )  */
-var experience = 40;
-var startingSalary = 30000;
+var experience = 30;
+var startingSalary = 45000;
 //write your code here
 
 
